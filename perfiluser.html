@@ -7,56 +7,51 @@
     <title>MEU PERFIL</title>
 </head>
 <body>
-    <header href background-header>
-        <div class="header_title">
-            <a href="home.html">
-                <h1>
-                CINEMUNDO
-                </h1>
-                <img src="assets/estrelas.png" alt="Estrelas CineMundo" width="200">
-            </a>
-        </div>
-        <nav>
-            <form action="#" method="post" class="header_search">
-            <label for="busca">
-                <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
-            </label>
-            <input type="text" placeholder="Quiz Harry Potter" id="busca" name="search" required>
-            <button type="submit">
-                Buscar
-            </button>
-            </form>
-
-            <ul id="menu-principal">
-                <li>
+    <header>
+        <h1>
+            CineMundo
+        </h1>
+        <UL>
+            <div>
+                <h3>
                     <a href="home.html">
                         HOME
                     </a>
-                </li>
-                <li>
+                    -
                     <a href="resenhas.html">
                         RESENHAS
                     </a>
-                </li>
-                <li>
+                    -
                     <a href="quiz.html">
-                        QUIZ
+                    QUIZ
                     </a>
-                </li>
-                <li>
+                    -
                     <a href="time.html">
-                        NOSSO TIME
+                    NOSSO TIME
                     </a>
-                </li>
-                <li>
-                    <img src="assets/foto-perfil.png" alt="foto perfil">
-                    <a href="perfil.html">
-                        ANNA_123
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                    -
+                    <label for="busca">
+                        BUSCAR:
+                    </label>
+                    <input type="text" placeholder="Digite sua pesquisa" id="busca" name="search">
+                    <button type="submit">
+                        Buscar
+                    </button>
+                </h3>
+                <form>
+                    <label for="username">
+                        Usuário:
+                    </label><br>
+                    <input type="text" placeholder="Seu usuário" id="username" name="username"><br>
+                    <label for="pwd">
+                        Senha:
+                    </label><br>
+                    <input type="password" placeholder="Digite sua senha" id="pwd" name="pwd">
+                </form>
+            </div>
+        </UL>
     </header>
+    
         <main>
             <section>
                 <h1> MEU PERFIL </h1>
@@ -113,64 +108,50 @@
         </main>
         
         <footer>
-            <section>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="home.html">
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <a href="resenhas.html">
-                                RESENHAS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="quiz.html">
-                                QUIZ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="time.html">
-                                NOSSO TIME
-                            </a>
-                        </li>
-                    </ul>
-            </section>
-            <form action="#" method="post">
+            <ol>
+                <a href="home.html">
+                    HOME
+                </a>
+                -
+                <a href="resenhas.html">
+                    RESENHAS
+                </a>
+                -
+                <a href="quiz.html">
+                QUIZ
+                </a>
+                -
+                <a href="time.html">
+                NOSSO TIME
+                </a>
+                -
+            </ol>
             <label for="busca">
-                <img src="assets/lupa.png" alt="Busca CineMundo" width="50">
+                BUSCAR:
             </label>
-            <input type="text" placeholder="Minha série favorita" id="busca" name="search" required>
+            <input type="text" placeholder="Minha série favorita" id="busca" name="search">
             <button type="submit">
                 Buscar
             </button>
-            </form>
-            <ul>
-                <section>
-                    <h1>
-                        SUPORTE
-                    </h1>
-                    <h2>
-                        CHAT 24h
-                        <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
-                        CONTATO: CONTATO@CINEMUNDO.COM.BR
-                    </h2>
-                </section>
-            </ul>
-            <section>
-                <h2>
-                    REDES SOCIAIS:
-                </h2>
-                <ol>
-                    <img src="assets/twitter.png" alt="twitter" width="30">
-                    <img src="assets/facebook.png" alt="facebook" width="30">
-                    <img src="assets/instagram.png" alt="instagram" width="30">
-                </ol>
-            </section>
+            <ol>
+                <nav>
+                <b>SUPORTE</b>
+                </nav>
+                CHAT 24h
+                <input type="button" onclick="alert('Pop-up aberta com o suporte')" value="CHAT">
+                <nav>
+                CONTATO: CONTATO@CINEMUNDO.COM.BR
+                </nav>
+            </ol>
+            <p>
+                Nos siga nas rede sociais:
+            </p>
+            <ol>
+                • Twitter
+                • Facebook
+                • Instagram
+            </ol>
             @2022 CINEMUNDO, LLC. todos os direitos reservados.
-            </nav>
         </footer>
 </body>
 </html>
