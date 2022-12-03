@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.news-stars {
+  width: 300px;
+  height: 200px;
+  gap: 20px;
+}
+
+.famous-series {
+  width: 300px;
+  height: 200px;
+  gap: 20px;
+}
+
+.best-movies {
+  width: 300px;
+  height: 200px;
+}
+
+.highlights-month {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-movies {
+  width: auto;
+  height: 500px;
+}
+
+.list-series {
+  width: auto;
+  height: 500px;
+}
+
+#quiz-leader {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+#best-comments {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+#analysis-wizard {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+#best-feed {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  gap: 20px;
+}
+
+#more-likes {
+  width: 200px;
+  height: 300px;
+  margin-left: 20px;
+  gap: 20px;
+}
