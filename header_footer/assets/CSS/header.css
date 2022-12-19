@@ -1,7 +1,6 @@
 header{
     background-color: black;
     color:white;
-    box-sizing: border-box;
 }
 
 .header_title {
@@ -12,7 +11,7 @@ header{
 }
 
 .header_title_cinemundo {
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 300;
     text-align: center;
 }
@@ -24,6 +23,13 @@ header{
     color: white;
 }
 
+@media (max-width: 952px){
+    label.header_title_cinemundo{
+        font-size: 70px;
+        padding-left: 50px;
+    }
+}
+
 .header_title_image {
     display: flex;
     align-items: center;
@@ -32,9 +38,58 @@ header{
     padding-bottom: 1.2%;
 }
 
+.checkbtn_header {
+    float: left;
+    display: none;
+}
+
+#check_header {
+    display: none;
+}
+
+@media (max-width: 920px){
+    .checkbtn_header{
+        display: block;
+    }   
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #080327;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:#BD4CF7;
+    }
+    #check_header:checked ~ ul{
+        left: 0;
+    }
+}
+
+i.material-symbols-outlined {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+i.material-symbols-outlined:hover {
+    color: #BD4CF7;
+}
+
 .header_main_menu {
     list-style: none;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     margin: 0 30px;
     display: flex;
@@ -42,8 +97,8 @@ header{
 }
 
 .header_main_menu_index {
-    border-top: 2px solid whitesmoke;
-    display: flex;
+    border-top: 2px solid white;
+    display: block;
     align-items: center;
     padding: 5px 40px 5px 40px;
     margin: 0 10px;
@@ -56,12 +111,12 @@ header{
 .header_main_menu li a{
     color: white;
     text-decoration: none;
-    border-radius: 1px;
 }
 
-.header_main_menu li a:hover{
-    /*background-color: #BD4CF7; */
-    background-image: linear-gradient(#BD4CF7, black, black);
+.header_main_menu li a:hover, .header_main_menu li a:active{
+    background-color: white;
+    color: black;
+    border-top: 2px solid black;
 }
 
 .header_main_menu2 {
@@ -74,7 +129,7 @@ header{
 }
 
 .header_perfil_name {
-    font-weight: 100;
+    font-weight: 100%;
 }
 
 .header_perfil_name a {
