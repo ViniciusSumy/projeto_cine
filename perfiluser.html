@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>MEU PERFIL</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./assets/css/perfiluser.css">
     <script src="./assets/js/" defer></script>
 
@@ -13,38 +16,43 @@
     <header>
         <div class="header_title">
             <a href="index.html">
-                <h1 class="header_title_cinemundo">
+                <label class="header_title_cinemundo">
                     cinemundo
-                </h1>
+                </label>
         </div>
         <div class="header_title_image">
             <img src="assets/image/header_estrelas.png" alt="CineMundo 5 Estrelas" width="220">
             </a>
         </div>
-        <nav>
-            <ul class="header_main_menu">
-                <div>
-                <li>
-                    <a href="index.html" class="header_main_menu_index">
-                        home
-                    </a>
-                </li>
-                <li>
-                    <a href="resenhas.html" class="header_main_menu_index">
-                        resenhas
-                    </a>
-                </li>
-                <li>
-                    <a href="quiz.html" class="header_main_menu_index">
-                        quiz
-                    </a>
-                </li>
-                <li>
-                    <a href="time.html" class="header_main_menu_index">
-                        nosso time
-                    </a>
-                </li>
-            </div>
+        <nav class="header_main_menu">
+            <menu id="menuHeader">
+                <input type="checkbox" id="check_header">
+                <label for="check_header" class="checkbtn_header">
+                    <i class="material-symbols-outlined">menu</i>
+                </label>
+                <ul>
+                    <li>
+                        <a href="index.html" class="header_main_menu_index">
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resenhas.html" class="header_main_menu_index">
+                            resenhas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="quiz.html" class="header_main_menu_index">
+                            quiz
+                        </a>
+                    </li>
+                    <li>
+                        <a href="time.html" class="header_main_menu_index">
+                            nosso time
+                        </a>
+                    </li>
+                </ul>
+            </menu>
             <div class="header_main_menu2">
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
@@ -55,15 +63,14 @@
                     </svg>
                 </li>
                 <li class="header_perfil_name">
-                    <a href="perfiluser.html">
+                    <a href="perfiluser.html" class="header_perfil_reference">
                         ANNA_123
-                    </a>
                 </li>
                 <li>
                     <img src="assets/image/header_foto-perfil.png" alt="foto perfil">
+                    </a>
                 </li>
             </div>
-            </ul>
         </nav>
     </header>
         <main>
@@ -165,7 +172,7 @@
                     </ul>
                 </div>
                 <div class="footer_search">
-                    <form action="#" method="post">
+                    <form action="#" method="post" class="footer_search_icon">
                         <label for="busca">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -207,11 +214,11 @@
                 </div>
                 <div>
                     <a href="." class="footer_social_media_link">
-                        <img src="assets/img/footer_twitter.png" alt="twitter" width="60"
+                        <img src="assets/image/footer_twitter.png" alt="twitter" width="60"
                             class="footer_social_media_image">
-                        <img src="assets/img/footer_facebook.png" alt="facebook" width="60"
+                        <img src="assets/image/footer_facebook.png" alt="facebook" width="60"
                             class="footer_social_media_image">
-                        <img src="assets/img/footer_instagram.png" alt="instagram" width="60"
+                        <img src="assets/image/footer_instagram.png" alt="instagram" width="60"
                             class="footer_social_media_image">
                     </a>
                 </div>
@@ -221,5 +228,5 @@
                 </div>
             </nav>
         </footer>
-</body>
+    </body>
 </html>
